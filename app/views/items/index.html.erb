@@ -1,0 +1,7 @@
+<h1>Welcome On Board</h1>
+<% @items.each do |f| %>
+	<h2><%= link_to f.title, f %></h2>
+	<p><%= f.description %></p>
+<% end %>
+
+<%= link_to "New todO", new_item_path %> 
